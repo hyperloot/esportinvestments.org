@@ -1,0 +1,82 @@
+
+
+/* fonts */
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-style: normal;
+    src: url(/MontserratAlternates-Medium.eot?1545d9f361b1f991c3f5a6700c626712);
+    src: url(/MontserratAlternates-Medium.eot?1545d9f361b1f991c3f5a6700c626712?#iefix) format('embedded-opentype'),
+         url(/MontserratAlternates-Medium.woff2?0a81da5eb3bcc7c508e2f149ab90762a) format("woff2"),
+         url(/MontserratAlternates-Medium.woff?ad2ff5fcc2c002ece1e5cba44e36d921) format("woff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-style: normal;
+    src: url(/MontserratAlternates-Light.eot?5e5876b83ae8a4e8258d214224e9130a);
+    src: url(/MontserratAlternates-Light.eot?5e5876b83ae8a4e8258d214224e9130a?#iefix) format('embedded-opentype'),
+         url(/MontserratAlternates-Light.woff2?441b1d69575f3d963c5e5c0efa4f0d8c) format("woff2"),
+         url(/MontserratAlternates-Light.woff?7c63880174d2625c0fc2b21b0f306241) format("woff");
+}
+
+/* */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  width: 770px;
+  height: 108px;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.on {
+  width: 770px;
+  height: 36px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.appl {
+  width: 770px;
+  height: 36px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.apply {
+  width: 410px;
+  height: 76px;
+  background-color: #8f002a;
+
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ffffff;
+}
