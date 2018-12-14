@@ -42,7 +42,7 @@ const config = {
         loader: 'babel-loader',
         exclude: /node_modules/,
       }, {
-        test: /\.(png|jpg|gif|otf|eot|woff|woff2|svg)$/,
+        test: /\.(png|jpg|gif|otf|eot|woff|woff2|svg|mp4|webm)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]',

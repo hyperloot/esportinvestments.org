@@ -7,9 +7,15 @@
     <title>Future of Entertainment eSports, series of fireside chats on future of eSports</title>
   </head>
   <body>
-    <h1>Future of Entertainment eSports, series of fireside chats on future of eSports</h1>
-    <p>Belvedere, Davos on December 24, at 16-00</p>
-    <p>Private event — apply to participate in the conversation</p>
-    <a href="#">Learn from eSports experts</a>
+    <div class="wrapper">
+      <h1>Future of Entertainment eSports, series of fireside chats on future of eSports</h1>
+      <p class="on">Belvedere, Davos on December 24, at 16-00</p>
+      <p class="appl">Private event — apply to participate in the conversation</p>
+      <a class="apply" href="#">Learn from eSports experts</a>
+    </div>
+
+    <video playsinline autoplay muted loop poster="<%= require('./assets/background.jpg') %>" class="background">
+      <source src="<%= require('./assets/video.webm') %>"  type="video/webm">
+    </video>
   </body>
 </html>

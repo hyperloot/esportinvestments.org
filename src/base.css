@@ -1,72 +1,71 @@
-
+@import '../~normalize.css';
 
 /* fonts */
 @font-face {
     font-family: "Montserrat";
     font-weight: 500;
     font-style: normal;
-    src: url("./assets/MontserratAlternates-Medium.eot");
-    src: url("./assets/MontserratAlternates-Medium.eot?#iefix") format('embedded-opentype'),
-         url("./assets/MontserratAlternates-Medium.woff2") format("woff2"),
-         url("./assets/MontserratAlternates-Medium.woff") format("woff");
+    src: url("./assets/Montserrat-Medium.eot");
+    src: url("./assets/Montserrat-Medium.eot?#iefix") format('embedded-opentype'),
+         url("./assets/Montserrat-Medium.woff2") format("woff2"),
+         url("./assets/Montserrat-Medium.woff") format("woff");
 }
 
 @font-face {
     font-family: "Montserrat";
     font-weight: 300;
     font-style: normal;
-    src: url("./assets/MontserratAlternates-Light.eot");
-    src: url("./assets/MontserratAlternates-Light.eot?#iefix") format('embedded-opentype'),
-         url("./assets/MontserratAlternates-Light.woff2") format("woff2"),
-         url("./assets/MontserratAlternates-Light.woff") format("woff");
+    src: url("./assets/Montserrat-Light.eot");
+    src: url("./assets/Montserrat-Light.eot?#iefix") format('embedded-opentype'),
+         url("./assets/Montserrat-Light.woff2") format("woff2"),
+         url("./assets/Montserrat-Light.woff") format("woff");
 }
 
 /* */
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-h1 {
-  width: 770px;
-  height: 108px;
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.wrapper h1 {
   font-family: Montserrat;
   font-size: 36px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
-  letter-spacing: normal;
   color: #ffffff;
+  margin: 0;
+  margin-bottom: 60px;
 }
 
-.on {
-  width: 770px;
-  height: 36px;
+.wrapper .on {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
-  letter-spacing: normal;
   color: #ffffff;
+  margin: 0;
 }
 
-.appl {
-  width: 770px;
-  height: 36px;
+.wrapper .appl {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
-  letter-spacing: normal;
   color: #ffffff;
+  margin: 0;
 }
 
-.apply {
+.wrapper .apply {
   width: 410px;
   height: 76px;
   background-color: #8f002a;
@@ -74,9 +73,68 @@ h1 {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
-  letter-spacing: normal;
   color: #ffffff;
+
+  display: block;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 3;
+  margin-top: 60px;
+}
+
+.background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: .3;
+}
+
+video { display: block; }
+
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 280px;
+  }
+
+  .wrapper h1 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.33;
+    margin-bottom: 40px;
+  }
+
+  .wrapper .on {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+
+  .wrapper .appl {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  .wrapper .apply {
+    width: 205px;
+    height: 40px;
+    background-color: #8f002a;
+
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin-top: 40px;
+  }
 }
