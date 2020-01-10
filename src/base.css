@@ -1,21 +1,246 @@
 @import '../~normalize.css';
-
 /* fonts */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400&display=swap');
 /* */
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  background: #000;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: stretch;
   min-height: 100vh;
 }
 
-
-
-@media (max-width: 1000px) {
-
+a {
+  text-decoration: none;
 }
+
+.main-wrap {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.left-aside {
+  color: #fff;
+  font-size: 16px;
+  background: #053555;
+  max-width: 300px;
+  padding: 24px;
+  background-image: url("./assets/background-aside.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+}
+
+.left-aside .logo {
+  background-image: url("./assets/Logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  width: 100px;
+  height: 100px;
+}
+
+.left-aside .join {
+  color: #56CCF2;
+  transition: color 0.3s;
+}
+
+.left-aside .join:hover {
+  color: #6ed7fa;
+}
+
+.left-aside .get {
+  background: #47C973;
+  color: #fff;
+  border-radius: 3px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 220px;
+}
+
+.left-aside ul {
+  padding-left: 0;
+}
+
+.left-aside .links {
+  padding-top: 24px;
+}
+
+.left-aside li {
+  list-style: none;
+  padding: 12px 0 12px 30px;
+  background: url("./assets/geo-icon.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.main-content .events {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content .events .event {
+  display: flex;
+  align-items: center;
+  padding: 50px 80px 40px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.main-content .events .event p {
+  color: #828282;
+  padding-top: 6px;
+  max-width: 500px;
+}
+
+.main-content .events .event .date {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-content .events .event .date .number {
+  font-size: 60px;
+  font-weight: 200;
+}
+
+.main-content .events .event .date .mounth {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.main-content .events .event .content-event {
+  padding-left: 90px;
+}
+
+.main-content .events .event .content-event .time {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.main-content .events .event .content-event .place {
+  background: url("./assets/geo-icon-black.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 14px;
+  padding-top: 2px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.main-content .events .event .content-event .title-link {
+  color: #005389;
+  font-size: 20px;
+  max-width: 500px;
+  transition: color 0.3s;
+}
+
+.main-content .events .event .content-event .title-link:hover {
+  color: #0e75b9;
+}
+
+.form-wrap {
+  display: flex;
+  background-image: url("./assets/background-form.png");
+  background-color: #4B81A4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 70px;
+}
+
+.form-wrap .title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  max-width: 400px;
+  margin-right: 12px;
+}
+
+.form-wrap input {
+  border: 1px solid #E0E0E0;
+  max-width: 170px;
+  border-radius: 3px;
+  padding: 12px;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.form-wrap input::placeholder {
+  color: #fff;
+}
+
+.form-wrap form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 680px;
+}
+
+.form-wrap form input[type="submit"] {
+  background: #47C973;
+  color: #fff;
+  border-radius: 3px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  border: 0;
+}
+
+.bottom-content {
+  padding: 70px 80px 70px;
+  background-image: url("./assets/backround-content-bottom.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottom-content .title {
+  color: #333333;
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 300;
+}
+
+.bottom-content .subtitle {
+  color: #333333;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.bottom-content .bold-title {
+  font-weight: bold;
+  color: #333333;
+  line-height: 24px;
+}
+
+.bottom-content p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #828282;
+}
+
+.bottom-content .italic-content {
+  font-style: italic;
+}
+
+.bottom-content li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #828282;
+}
+
+@media (max-width: 1000px) {}
