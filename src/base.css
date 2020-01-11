@@ -28,7 +28,7 @@ a {
   font-size: 16px;
   background: #053555;
   max-width: 300px;
-  padding: 24px;
+  padding: 12px 24px 24px;
   background-image: url("./assets/background-aside.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -36,10 +36,10 @@ a {
 }
 
 .left-aside .logo {
-  background-image: url("./assets/Logo.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top center;
+  margin-left: -10px;
+}
+
+.left-aside .logo svg {
   width: 100px;
   height: 100px;
 }
@@ -47,10 +47,20 @@ a {
 .left-aside .join {
   color: #56CCF2;
   transition: color 0.3s;
+  display: flex;
+  margin-bottom: 6px;
 }
 
 .left-aside .join:hover {
   color: #6ed7fa;
+}
+
+.left-aside .logo p {
+  font-size: 8px;
+  margin-bottom: 0;
+  margin-top: -30px;
+  margin-left: 12px;
+  text-transform: uppercase;
 }
 
 .left-aside .get {
@@ -157,7 +167,7 @@ a {
   padding: 80px 70px;
 }
 
-.form-page {
+.main-wrap .form-page {
   height: 100vh;
   background-image: url("./assets/backround-content-bottom.png");
   padding: 0;
