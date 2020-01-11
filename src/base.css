@@ -35,11 +35,11 @@ a {
   background-position: top center;
 }
 
-.left-aside .logo {
+.left-aside .logo-wrap {
   margin-left: -10px;
 }
 
-.left-aside .logo svg {
+.left-aside .logo-wrap svg {
   width: 100px;
   height: 100px;
 }
@@ -55,7 +55,7 @@ a {
   color: #6ed7fa;
 }
 
-.left-aside .logo p {
+.left-aside .logo-wrap p {
   font-size: 8px;
   margin-bottom: 0;
   margin-top: -30px;
