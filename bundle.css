@@ -605,6 +605,8 @@ a {
   height: 100vh;
   background-image: url(/backround-content-bottom.png?f0e2b656ccfe81736e645f217aedbe5b);
   padding: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-wrap .title {
