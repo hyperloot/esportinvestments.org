@@ -159,8 +159,10 @@ a {
 
 .form-page {
   height: 100vh;
-  background-image: url("./assets/background-content-bottom.png");
+  background-image: url("./assets/backround-content-bottom.png");
   padding: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-wrap .title {
@@ -305,5 +307,8 @@ a {
   }
   .form-page {
     padding: 0;
+  }
+  .form-page .form-wrap .title {
+    width: 90%;
   }
 }
