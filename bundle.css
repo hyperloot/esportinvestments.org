@@ -750,4 +750,7 @@ a {
   .form-page {
     padding: 0;
   }
+  .form-page .form-wrap .title {
+    width: 90%;
+  }
 }
