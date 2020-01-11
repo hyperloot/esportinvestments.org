@@ -687,4 +687,59 @@ a {
   color: #828282;
 }
 
-@media (max-width: 1000px) {}
+@media (max-width: 480px) {
+  .main-wrap {
+    flex-direction: column;
+  }
+  .left-aside {
+    max-width: 100%;
+    background-size: cover;
+    padding-bottom: 48px;
+  }
+  .main-content .events .event {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+  }
+  .main-content .events .event .content-event {
+    padding-left: 0;
+  }
+  .main-content .events .event .content-event .title-link {
+    font-size: 18px;
+  }
+  .main-content .events .event .date {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .main-content .events .event .date .number {
+    padding-right: 6px;
+    font-size: 32px;
+  }
+  .main-content .events .event .date .mounth {
+    font-size: 20px;
+  }
+  .form-wrap {
+    padding: 80px 24px;
+    flex-direction: column;
+  }
+  .form-wrap .title {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .form-wrap .form-group {
+    width: 100%;
+  }
+  .form-wrap input {
+    max-width: 200px;
+  }
+  .form-wrap form input[type="submit"] {
+    max-width: 220px;
+  }
+
+  .bottom-content {
+    padding: 36px 24px;
+  }
+  .left-aside .get {
+    max-width: 100%;
+  }
+}
