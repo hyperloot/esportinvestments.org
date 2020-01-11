@@ -5,7 +5,7 @@ const path = require('path');
 // const marked = require('marked');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const IS_PROD = process.env.NODE_ENV === 'production';
@@ -73,10 +73,17 @@ const config = {
   devtool: '#eval-source-map',
   plugins: [
     new CopyWebpackPlugin([{ from: 'public' }]),
-    // new FaviconsWebpackPlugin('./src/assets/logo.svg'),
+    new FaviconsWebpackPlugin('./src/assets/logo.svg'),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/index.ejs',
+      templateParameters: {
+        lang: 'en',
+      },
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'formpage.html',
+      template: 'src/formpage.ejs',
       templateParameters: {
         lang: 'en',
       },
