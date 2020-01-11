@@ -157,6 +157,12 @@ a {
   padding: 80px 70px;
 }
 
+.form-page {
+  height: 100vh;
+  background-image: url("./assets/background-content-bottom.png");
+  padding: 0;
+}
+
 .form-wrap .title {
   color: #fff;
   font-size: 24px;
@@ -291,11 +297,13 @@ a {
   .form-wrap form input[type="submit"] {
     max-width: 220px;
   }
-
   .bottom-content {
     padding: 36px 24px;
   }
   .left-aside .get {
     max-width: 100%;
+  }
+  .form-page {
+    padding: 0;
   }
 }
