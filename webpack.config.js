@@ -73,7 +73,7 @@ const config = {
   devtool: '#eval-source-map',
   plugins: [
     new CopyWebpackPlugin([{ from: 'public' }]),
-    new FaviconsWebpackPlugin('./src/assets/logo.svg'),
+    new FaviconsWebpackPlugin('./src/assets/logo.png'),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/index.ejs',
