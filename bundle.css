@@ -472,7 +472,7 @@ a {
   font-size: 16px;
   background: #053555;
   max-width: 300px;
-  padding: 24px;
+  padding: 12px 24px 24px;
   background-image: url(/background-aside.png?f9753c02981d16f9228d0edb9ae11178);
   background-repeat: no-repeat;
   background-size: contain;
@@ -480,10 +480,10 @@ a {
 }
 
 .left-aside .logo {
-  background-image: url(/Logo.png?5021474cbf3e69798621f207f5af471a);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top center;
+  margin-left: -10px;
+}
+
+.left-aside .logo svg {
   width: 100px;
   height: 100px;
 }
@@ -491,10 +491,20 @@ a {
 .left-aside .join {
   color: #56CCF2;
   transition: color 0.3s;
+  display: flex;
+  margin-bottom: 6px;
 }
 
 .left-aside .join:hover {
   color: #6ed7fa;
+}
+
+.left-aside .logo p {
+  font-size: 8px;
+  margin-bottom: 0;
+  margin-top: -30px;
+  margin-left: 12px;
+  text-transform: uppercase;
 }
 
 .left-aside .get {
@@ -601,7 +611,7 @@ a {
   padding: 80px 70px;
 }
 
-.form-page {
+.main-wrap .form-page {
   height: 100vh;
   background-image: url(/backround-content-bottom.png?f0e2b656ccfe81736e645f217aedbe5b);
   padding: 0;
