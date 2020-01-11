@@ -472,7 +472,7 @@ a {
   font-size: 16px;
   background: #053555;
   max-width: 300px;
-  padding: 12px 24px 24px;
+  padding: 24px;
   background-image: url(/background-aside.png?f9753c02981d16f9228d0edb9ae11178);
   background-repeat: no-repeat;
   background-size: contain;
@@ -480,13 +480,14 @@ a {
 }
 
 .left-aside .logo-wrap {
-  margin-left: -10px;
+  width: 140px;
+  height: 140px;
+  background-image: url(/logo.png?3991d3442fbbe46ea18e3adb0e91dc61);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-.left-aside .logo-wrap svg {
-  width: 100px;
-  height: 100px;
-}
 
 .left-aside .join {
   color: #56CCF2;
@@ -497,14 +498,6 @@ a {
 
 .left-aside .join:hover {
   color: #6ed7fa;
-}
-
-.left-aside .logo-wrap p {
-  font-size: 8px;
-  margin-bottom: 0;
-  margin-top: -30px;
-  margin-left: 12px;
-  text-transform: uppercase;
 }
 
 .left-aside .get {
