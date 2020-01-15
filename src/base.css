@@ -109,6 +109,7 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
+  min-width: 180px;
 }
 
 .main-content .events .event .date .number {
