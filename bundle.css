@@ -488,7 +488,6 @@ a {
   background-position: center;
 }
 
-
 .left-aside .join {
   color: #56CCF2;
   transition: color 0.3s;
@@ -501,7 +500,7 @@ a {
 }
 
 .left-aside .get {
-  background: #47C973;
+  background: linear-gradient(90deg, #01F695 0.01%, #10D7A8 36.86%, #2D9ACF 100.02%);
   color: #fff;
   border-radius: 3px;
   height: 48px;
@@ -646,7 +645,7 @@ a {
 }
 
 .form-wrap form input[type="submit"] {
-  background: #47C973;
+  background: linear-gradient(90deg, #01F695 0.01%, #10D7A8 36.86%, #2D9ACF 100.02%);
   color: #fff;
   border-radius: 3px;
   height: 40px;
@@ -656,6 +655,14 @@ a {
   width: 100%;
   max-width: 200px;
   border: 0;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.2s;
+  outline: none;
+}
+
+.form-wrap form input[type="submit"]:active {
+  transform: scale(0.98);
 }
 
 .bottom-content {
